@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example of Radio Button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_marginBottom="80dp"
+        android:text="yang lebih cocok jadi Brand ambasador ? "
+        android:textColor="#ff87ff09"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="201dp"
+        android:layout_height="198dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/github" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/radioGroup"
+        android:layout_alignTop="@id/radioGroup"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="150dp" android:text="ClickMe" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="-1dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Nurul hikmah"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Bening Karina"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Fitri Cantik"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25dp" />
+    </RadioGroup>
+</RelativeLayout>
